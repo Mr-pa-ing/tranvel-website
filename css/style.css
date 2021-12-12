@@ -63,3 +63,25 @@
     background-position: left center;
 }
 /* END BANNER */
+
+/* START DESTINATION SECTION  */
+.destilis{
+    cursor: pointer;
+    position: relative;
+}
+
+.destilis.active.destilis::after{
+    background-color: #000;
+}
+
+.destilis::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0,0,0,0.1);
+
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+/* END DESTINATION SECTION  */
