@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 
 /* START NAVBAR  */
 .navmenus{
@@ -38,7 +40,7 @@
 .searchinputs{
     border: none;
     border-bottom: 1px groove blue;
-    transition: all 1s;
+    transition: all 0.5s;
     transform: scale(0);
     transform-origin: right bottom;
 }
@@ -85,3 +87,96 @@
     left: 0;
 }
 /* END DESTINATION SECTION  */
+
+/* START BLOG SECTION  */
+.kilibgs{
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/resources/769476eca369b0a8fa4a33de98bfad78);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.thingbgs{
+    height: 190px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/resources/16e85f0e6a27749f76169d9b6ad50ea6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    margin-bottom: 20px;
+}
+
+.femalebgs{
+    height: 190px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/resources/2ad4b19211a15e1fb18a232b776ae54b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+.kilibgs:hover,.thingbgs:hover,.femalebgs:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 10px 10px rgba(0,0,0,0.5);
+}
+
+/* END BLOG SECTION  */
+
+/* START CUSTOMER SECTION  */
+.progress-container{
+    position: relative;
+}
+
+.fa-quote{
+    position: absolute;
+    top: -40px;
+    left: -45px;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 4px;
+    background-color: blue;
+
+    animation-name: myani;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+
+    margin-bottom: 10px;
+}
+
+@keyframes myani {
+    from{
+        transform: scaleX(0);
+    }
+}
+
+.customer-imgs{
+    width: 100px;
+    border-radius: 50%;
+}
+/* END CUSTOMER SECTION  */
