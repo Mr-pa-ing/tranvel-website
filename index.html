@@ -4,6 +4,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Primary Meta Tags -->
+        <title>Meta Tags — Preview, Edit and Generate</title>
+        <meta name="title" content="Meta Tags — Preview, Edit and Generate">
+        <meta name="description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://metatags.io/">
+        <meta property="og:title" content="Meta Tags — Preview, Edit and Generate">
+        <meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+        <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://metatags.io/">
+        <meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate">
+        <meta property="twitter:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+        <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
         <title>Travelo</title>
         <!-- favicon -->
         <link rel="shortcut icon" href="./assets/resources/9df3a2d0314f19cd4e3d50876deab4c6" type="image/x-icon" sizes="16x16"/>
@@ -16,12 +34,12 @@
         <!-- custom css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <!-- scroll reveal js1  -->
-        <script src="https://unpkg.com/scrollreveal"></script> 
+        <!-- <script src="https://unpkg.com/scrollreveal"></script>  -->
     </head>
     <body>
 
         <!-- START NAVBAR -->
-        <nav id="header" class="navbar navbar-expand-lg fixed-top bg-transparent animate__animated contents">
+        <nav id="header" class="navbar navbar-expand-lg fixed-top bg-transparent animate__animated">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
                     <img src="./assets/resources/9df3a2d0314f19cd4e3d50876deab4c6" style="width: 40px;" class="" alt="logo">                   
@@ -57,13 +75,13 @@
         <section id="home" class="bannersections">
             <div class="container-fluid">               
                 <div class="row">
-                    <div class="col-xl-6 mx-auto mt-5 text-center contents">
-                        <h1 class="display-3 mt-5 text-white margintops"><span class="type"></span></h1>
-                        <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="col-xl-6 mx-auto mt-5 text-center">
+                        <h1 class="display-3 mt-5 text-white margintops text_reveal"><span class="type"></span></h1>
+                        <p class="lead text-white text_reveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 mx-auto d-none d-sm-block contents">
+                    <div class="col-6 mx-auto d-none d-sm-block box_reveal">
                         <div class="container-fluid">
                             <div class="row bg-light p-3 rounded">
                                 <div class="col-lg-4 mb-3 border-end">
@@ -93,7 +111,7 @@
         <section id="about">
             <div class="container-fluid mt-5">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-4 contents">
+                    <div class="col-lg-3 col-md-6 mb-4 card_reveal">
                         <div class="card border-0 shadow">
                             <div class="card-body">
                                 <i class="fas fa-dollar-sign fa-3x text-primary"></i>
@@ -102,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4 contents">
+                    <div class="col-lg-3 col-md-6 mb-4 card_reveal">
                         <div class="card border-0 shadow">
                             <div class="card-body">
                                 <i class="fas fa-shield-virus fa-3x text-danger"></i>
@@ -111,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4 contents">
+                    <div class="col-lg-3 col-md-6 mb-4 card_reveal">
                         <div class="card border-0 shadow">
                             <div class="card-body">
                                 <i class="fas fa-money-check-alt fa-3x text-success"></i>
@@ -120,7 +138,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4 contents">
+                    <div class="col-lg-3 col-md-6 mb-4 card_reveal">
                         <div class="card border-0 shadow">
                             <div class="card-body">
                                 <i class="fas fa-street-view fa-3x text-warning"></i>
@@ -138,16 +156,17 @@
         <section id="places">
             <div class="container-fluid my-5">
                 <div class="row mb-3">
-                    <div class="col-12 contents">
-                        <h3 class="text-center contents">Recommended Destination</h3>
+                    <div class="col-12">
+                        <h3 class="text-center">Recommended Destination</h3>
                         <ul class="list-unstyled d-flex mt-5">
-                            <li class="fw-bold mx-auto destilis active contents">The Weekend Break</li>
-                            <li class="fw-bold mx-auto destilis contents">The Package Holiday</li>
-                            <li class="fw-bold mx-auto destilis contents">The Group Tour</li>
-                            <li class="fw-bold mx-auto destilis contents">Long Term Slow Travel</li>
+                            <li class="fw-bold mx-auto destilis active">The Weekend Break</li>
+                            <li class="fw-bold mx-auto destilis">The Package Holiday</li>
+                            <li class="fw-bold mx-auto destilis">The Group Tour</li>
+                            <li class="fw-bold mx-auto destilis">Long Term Slow Travel</li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="row">
 
                     <div class="col-lg-4 col-md-6 mb-3 contents">
@@ -305,10 +324,10 @@
             <div class="container-fluid my-5">
                 <div class="row mx-3 contents">
                     <h3 class="text-center">Blogs</h3>
-                    <div class="col-lg-6 mt-5 kilibgs  contents">
+                    <div class="col-lg-6 mt-5 kilibgs ">
                         <h1 class="text-light text-center w-75">The Ultimate Guide to Climbing Mount Kilimanjaro</h1>
                     </div>
-                    <div class="col-lg-6 text-white mt-4 mt-lg-5 contents">
+                    <div class="col-lg-6 text-white mt-4 mt-lg-5">
                         <div class="col-12 thingbgs"><h3 class="w-50 text-center">12 Things I'd Tell Any New Traveler</h3></div>
                         <div class="col-12 femalebgs"><h3 class="w-75 text-center">The Ultimate Package List for Female Travelers</h3></div>
                     </div>
@@ -320,14 +339,14 @@
         <!-- START CUSTOMERS SECTION  -->
         <section id="careers">
             <div class="container">
-                <h3 class="text-center mb-5 contents">Happy Customers</h3>
+                <h3 class="text-center mb-5">Happy Customers</h3>
                 <div class="row mb-5">
-                    <div class="col-lg-6 mx-auto w-75 contents">
+                    <div class="col-lg-6 mx-auto w-75 customer_reveal">
                         <div class="progress-container">
                             <i class="fas fa-quote-left fa-3x text-secondary fa-quote"></i>                     
                             <div class="progress-bar"></div>
                             <p class="text-secondary feedbacks">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                            <div class="user d-flex  contents">
+                            <div class="user d-flex">
                                 <img src="https://randomuser.me/api/portraits/women/11.jpg" class="customer-imgs me-3" alt="">
                                 <div class="user-details align-self-center">
                                     <h3 class="usernames">Kay Kay</h3>
@@ -343,12 +362,12 @@
 
         <!-- START FOOTER SECTION -->
         <footer>
-            <div class="container mt-5 contents">
-                <div class="row contents">
+            <div class="container mt-5">
+                <div class="row">
                     <div class="col-lg-4 col-sm-12 justify-content-sm-center align-self-center">
                         <p class="px-3">Copyright &copy; 2020 Travelo.All rights reserved</p>
                     </div>
-                    <div class="col-lg-5 col-sm-12  align-self-center contents">
+                    <div class="col-lg-5 col-sm-12  align-self-center">
                         <ul class="list-inline text-start">
                             <li class="list-inline-item"><a href="#home" class="nav-link fs-6 text-dark">Home</a></li>
                             <li class="list-inline-item"><a href="#about" class="nav-link fs-6 text-dark">About</a></li>
@@ -357,7 +376,7 @@
                             <li class="list-inline-item"><a href="#blog" class="nav-link fs-6 text-dark">Blogs</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-sm-12 align-self-center contents">
+                    <div class="col-lg-3 col-sm-12 align-self-center">
                         <ul class="list-inline testtext-start">
                             <li class="list-inline-item"><a href="#" class="nav-link"><i class="fab fa-facebook fa-2x text-dark"></i></a></li>
                             <li class="list-inline-item"><a href="#" class="nav-link"><i class="fab fa-instagram fa-2x text-dark"></i></a></li>

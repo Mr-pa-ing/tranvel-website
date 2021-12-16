@@ -95,12 +95,21 @@ setInterval(updatetestimonial,10000);
 // END CUSTOMER 
 
 // START SCROLL REVEAL 
-ScrollReveal({
+const sr = ScrollReveal({
     origin: "top",
-    distance: "30px",
+    distance: "50px",
     duration: 1000,
     reset: true
-}).reveal('.contents',{
+});
+sr.reveal('.contents',{
     interval: 200
 });
+
+sr.reveal('.thingbgs',{delay: 400});
+sr.reveal('.femalebgs',{delay: 400});
+
+sr.reveal('.text_reveal',{});
+sr.reveal('.card_reveal',{delay: 400,interval: 200});
+sr.reveal('.box_reveal',{});
+sr.reveal('.customer_reveal',{});
 // END SCROLL REVEAL 
