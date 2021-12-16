@@ -3,6 +3,11 @@ html{
 }
 
 /* START NAVBAR  */
+.headers{
+    background-color: hsla(0, 0%, 2%, 0.342)!important;
+    backdrop-filter: blur(15px) contrast(105%);
+}
+
 .navmenus{
     position: relative;
 }
@@ -27,19 +32,15 @@ html{
 
 @media (max-width: 990px) {
     .navmenus::before{
-        width: 40%;
-        left: 30%;
-
-        transition: all 0.3s;
-    }
-    .navmenus:hover.navmenus::before{
-        transform: scale(1);
+       display: none;
     }
 }
 
 .searchinputs{
+    width: 200px;
     border: none;
-    border-bottom: 1px groove blue;
+    color: #fff;
+    border-bottom: 1px groove #fff;
     transition: all 0.5s;
     transform: scale(0);
     transform-origin: right bottom;
@@ -50,6 +51,12 @@ html{
     transform: scale(1);
 }
 
+@media (width: 1024px) {
+    .searchinputs{
+        width: 90px;
+    }
+}
+
 .searchinputs:focus{
     outline: 0;
     box-shadow: none;
@@ -58,11 +65,15 @@ html{
 
 /* START BANNER */
 .bannersections{
-    height: 550px;
+    height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/resources/a9feda124595a30b4baabed9437de23c);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
+}
+
+.margintops{
+    margin-top: 200px !important;
 }
 /* END BANNER */
 
@@ -180,3 +191,8 @@ html{
     border-radius: 50%;
 }
 /* END CUSTOMER SECTION  */
+
+.scrolls{
+    bottom: 50px;
+    right: 15px;
+}
